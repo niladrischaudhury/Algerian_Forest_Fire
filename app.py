@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, app
+from flask_cors import CORS, cross_origin
 import pickle
 import numpy as np
 import pandas as pd
@@ -31,4 +32,4 @@ def predict_temp_api():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
