@@ -8,14 +8,12 @@ app = Flask(__name__)
 
 reg_model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route('/', methods=['GET'])  # route to display the home page
-@cross_origin()
+@app.route('/')
 def homePage():
     print("Starting home page")
-    return render_template("index.html")
+    return render_template('index.html')
 
 @app.route('/predict_temp', methods=['POST'])
-@cross_origin()
 def predict_temp_api():
     #day = request.json['day']
     #month = request.json['month']
