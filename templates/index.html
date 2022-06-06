@@ -8,76 +8,13 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Algerian Forest Fire Prediction</h1>
+    <h1 style="text-align: center">iNeuron Course Scrapper</h1>
 
     <div class="form">
-        <form action="/predict_temp" method="POST">
-            <table class="table">
-                <tbody>
-                <tr>
-                    <th>day</th>
-                    <td><input type="text" name="day" id="day" placeholder="day" required="required"></td>
-                </tr>
-                <tr>
-                    <th>Month</th>
-                    <td><input type="text" name="month" id="month" placeholder="day" required="required"></td>
-                </tr>
-                <tr>
-                    <th>Year</th>
-                    <td><input type="text" name="year" id="year" placeholder="year" required="required"></td>
-                </tr>
-                <tr>
-                    <th>RH</th>
-                    <td><input type="text" name="RH" id="RH" placeholder="RH" required="required"></td>
-                </tr>
-                <tr>
-                    <th>WS</th>
-                    <td><input type="text" name="WS" id="WS" placeholder="WS" required="required"></td>
-                </tr>
-                <tr>
-                    <th>Rain</th>
-                    <td><input type="text" name="Rain" id="Rain" placeholder="Rain" required="required"></td>
-                </tr>
-                <tr>
-                    <th>FFMC</th>
-                    <td><input type="text" name="FFMC" id="FFMC" placeholder="FFMC" required="required"></td>
-                </tr>
-                <tr>
-                    <th>DMC</th>
-                    <td><input type="text" name="DMC" id="DMC" placeholder="DMC" required="required"></td>
-                </tr>
-                <tr>
-                    <th>DC</th>
-                    <td><input type="text" name="DC" id="DC" placeholder="DC" required="required"></td>
-                </tr>
-                <tr>
-                    <th>ISI</th>
-                    <td><input type="text" name="ISI" id="ISI" placeholder="ISI" required="required"></td>
-                </tr>
-                <tr>
-                    <th>BUI</th>
-                    <td><input type="text" name="BUI" id="BUI" placeholder="BUI" required="required"></td>
-                </tr>
-                <tr>
-                    <th>FWI</th>
-                    <td><input type="text" name="FWI" id="FWI" placeholder="FWI" required="required"></td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td><input type="submit" value="Get Temperature Prediction"></td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <td>{{prediction_text}}</td>
-                </tr>
-                </tbody>
-            </table>
-
+        <form action="/maincourses" method="POST">
+            <!--<input type="text" name="content" id="content">-->
+            <input type="submit" value="Get iNeuron Courses">
         </form>
-        <br>
-        <br>
-        <br>
     </div>
-
 </div>
 {% endblock %}
